@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="productForm" class="product-form">
+            <label class="title">Agregar un nuevo producto</label>
+            <input class="product-input" type="text" name="title" id="title" placeholder="Nombre del producto" />
+            <input class="product-input" type="number" name="price" id="price" placeholder="Precio" />
+            <input class="product-input" type="text" name="thumbnail" id="thumbnail" placeholder="Url del producto" />
+            <input class="btn" type="submit" value="Enviar" />
+            <p id="success-message" class="success-message"></p>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+    <script src="./desafio.js"></script>
+</body>
+</html>
