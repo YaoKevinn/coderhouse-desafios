@@ -1,0 +1,15 @@
+html
+head
+  title Agregar un producto
+  link(rel='stylesheet' href='/css/styles.css')
+.container
+  h2.form-title Agregar un producto
+  form#productForm.upload-form(method='post' action='/api/productos')
+    input#title.input(type='text' name='title' placeholder='Título')
+    .divider
+    input#price.input(type='text' name='price' placeholder='Precio')
+    .divider
+    input#thumbnail.input(type='text' name='thumbnail' placeholder='Photo del producto')
+    input.btn(type='submit' value='Agregar')
+  button.product-list-btn(onclick="window.location.href = 'http://localhost:8080/productos'") Lista de productos
+script(src='/js/home.js')

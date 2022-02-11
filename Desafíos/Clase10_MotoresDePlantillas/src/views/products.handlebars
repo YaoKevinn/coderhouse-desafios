@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="product-list">
+        <p class="form-title">Lista de productos</p>
+        {{#if products}}
+                {{#each products}}
+                <div class="row">
+                    <b>{{this.title}}</b>
+                    <p>{{this.price}}</p>
+                    <img class="product-img" src="{{this.thumbnail}}" />
+                </div>
+                {{/each}}
+        {{else}}
+            <p>No hay productos</p>
+        {{/if}}
+        <button id="homeBtn" class="product-list-btn">Agregar un nuevo producto</button>
+    </div>
+</div>
+
+<script src="/js/products.js"></script>
