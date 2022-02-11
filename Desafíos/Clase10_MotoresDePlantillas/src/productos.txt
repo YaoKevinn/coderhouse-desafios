@@ -1,56 +1,14 @@
 [
   {
-    "title": "BTC - Bitcoin",
-    "price": 45000,
-    "thumbnail": "https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Bitcoin_BTC-512.png",
+    "title": "Lapiz",
+    "price": "50",
+    "thumbnail": "https://cdn-icons-png.flaticon.com/512/227/227104.png",
     "id": 1
   },
   {
-    "title": "ETH - Ether",
-    "price": 3600,
-    "thumbnail": "https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Ethereum_ETH-512.png",
-    "id": 2
-  },
-  {
     "title": "Lapicera",
-    "price": 20,
-    "thumbnail": "https://cdn-icons-png.flaticon.com/512/227/227104.png",
-    "id": 3
-  },
-  {
-    "title": "Pencil",
-    "price": "20",
-    "thumbnail": "https://cdn-icons-png.flaticon.com/512/227/227104.png",
-    "id": 4
-  },
-  {
-    "title": "Apple pencil",
-    "price": "2000",
+    "price": "200",
     "thumbnail": "https://cdn-icons.flaticon.com/png/512/4142/premium/4142473.png?token=exp=1644556022~hmac=c27f60bea055bc88b585563910c373c5",
-    "id": 5
-  },
-  {
-    "title": "Apple pencil 2",
-    "price": "3000",
-    "thumbnail": "https://cdn-icons.flaticon.com/png/512/4142/premium/4142473.png?token=exp=1644556022~hmac=c27f60bea055bc88b585563910c373c5",
-    "id": 6
-  },
-  {
-    "title": "Apple pencil 3",
-    "price": "50000",
-    "thumbnail": "https://cdn-icons.flaticon.com/png/512/4142/premium/4142473.png?token=exp=1644556022~hmac=c27f60bea055bc88b585563910c373c5",
-    "id": 7
-  },
-  {
-    "title": "Banana pencil",
-    "price": "50000",
-    "thumbnail": "https://cdn-icons.flaticon.com/png/512/4142/premium/4142473.png?token=exp=1644556022~hmac=c27f60bea055bc88b585563910c373c5",
-    "id": 8
-  },
-  {
-    "title": "Apple pencil 8",
-    "price": "80000",
-    "thumbnail": "https://cdn-icons.flaticon.com/png/512/4142/premium/4142473.png?token=exp=1644556022~hmac=c27f60bea055bc88b585563910c373c5",
-    "id": 9
+    "id": 2
   }
 ]

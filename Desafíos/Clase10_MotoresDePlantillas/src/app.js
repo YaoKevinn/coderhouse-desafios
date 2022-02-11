@@ -26,16 +26,16 @@ app.engine('handlebars', handlebars.engine({
 }));
 
 // Handlebars
-// app.set('views', './views');
-// app.set('view engine', 'handlebars');
+app.set('views', './views');
+app.set('view engine', 'handlebars');
 
 // Pug
 // app.set('views', './views_pug');
 // app.set('view engine', 'pug');
 
 // Ejs
-app.set('views', './views_ejs');
-app.set('view engine', 'ejs');
+// app.set('views', './views_ejs');
+// app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     res.render('home');

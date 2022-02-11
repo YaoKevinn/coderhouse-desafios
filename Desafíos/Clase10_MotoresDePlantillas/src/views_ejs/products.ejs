@@ -3,7 +3,7 @@
 <div class="container">
     <div class="product-list">
         <p class="form-title">Lista de productos</p>
-        <% if (products) { %>
+        <% if (products.length !== 0) { %>
             <% products.forEach(product => { %>
                 <div class="row">
                     <b><%= product.title %></b>
@@ -16,6 +16,11 @@
         <% } %>
         <button id="homeBtn" class="product-list-btn" onclick="window.location.href = 'http://localhost:8080/'">Agregar un nuevo producto</button>
     </div>
+
+    <br>
+    <br>
+    
+    <span>*** Utilizando Ejs ***</span>
 </div>
 
 <%- include("partials/footer.ejs") %>
