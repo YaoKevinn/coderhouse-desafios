@@ -5,6 +5,13 @@ socket.on('newProduct', data => {
     addProductToList(data);
 });
 
+socket.on('newUserMessage', data => {
+    console.log(data);
+    addConversationToList(data);
+});
+
+
+// PRODUCT APIs
 const getCurrentProductList = () => {
     fetch('http://localhost:8080/api/productos', {
         method: 'GET',
@@ -64,4 +71,70 @@ addProductToList = (data) => {
     list.appendChild(element);
 }
 
+// Chat APIs
+const getAllConversations = () => {
+    fetch('http://localhost:8080/api/conversations', {
+        method: 'GET',
+        headers: {
+            "Content-type": "application/json"
+        },
+    })
+    .then((res) => res.json())
+    .then((json) => {
+        console.log(json);
+        json.forEach(message => {
+            addConversationToList(message);
+        });
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+}
+
+const addConversationToList = (data) => {
+    const list = document.getElementById('list-chat');
+    const element = document.createElement('div');
+    const time = new Date(data.creationTime);
+
+    element.className = "row";
+
+    const template = `
+        <div class="col">
+            <div class="row">
+                <b>${data.author}</b>
+                <p class="time-text">${getDateText(data.creationTime)}</p>
+            </div>
+            <div class="row">
+                <i><p class="message-text">${data.message}</p><i/>
+            </div>
+        </div>
+    `;
+
+    element.innerHTML = template
+    list.appendChild(element);
+}
+
+const getDateText = (isoDate) => {
+    const date = new Date(isoDate);
+    return `[${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}]`;
+}
+
+const sendBtnClicked = () => {
+    const userInput = document.getElementById('userInput');
+    const messageInput = document.getElementById('messageInput');
+
+    if (userInput.value == '') {
+        alert('Debe ingresar su mail para poder mandar mensajes');
+        return
+    }
+
+    socket.emit('newMessage', {
+        author: userInput.value,
+        message: messageInput.value
+    });
+
+    messageInput.value = '';
+}
+
 getCurrentProductList();
+getAllConversations();

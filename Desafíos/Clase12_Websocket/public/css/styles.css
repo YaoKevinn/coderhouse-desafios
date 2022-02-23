@@ -1,5 +1,6 @@
 * {
     font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
 .container {
@@ -19,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+    width: 500px;
     overflow: hidden;
     padding: 25px;
     position: relative;
@@ -80,6 +81,11 @@
     align-self: center;
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
 .row {
     display: flex;
     align-items: center;
@@ -88,7 +94,7 @@
 }
 
 .product-list {
-    width: 300px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,4 +110,31 @@
 .product-img {
     width: 30px;
     height: 30px;
+}
+
+.message-text {
+    color: #42CE93;
+}
+
+.time-text {
+    color: brown;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.user-input {
+    width: 100%;
+    margin: 12.5px 0;
+    padding: 5px 15px;
+    background-color: #ddd;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+#list-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
 }

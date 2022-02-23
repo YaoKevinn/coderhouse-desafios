@@ -4,9 +4,12 @@ const { Server: HttpServer } = require('http');
 
 const handlebars = require('express-handlebars');
 const productsRouter = require('./routes/products');
+const conversationsRouter = require('./routes/conversations');
 
 const Contenedor = require('./Contenedor');
 const contenedor = new Contenedor('./productos.txt')
+const Chat = require('./Chat');
+const chat = new Chat('./conversations.txt');
 
 const app = express();
 const httpServer = new HttpServer(app);
@@ -19,6 +22,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 app.use('/api/productos', productsRouter);
+app.use('/api/conversations', conversationsRouter);
 
 app.engine('handlebars', handlebars.engine({
     defaultLayout: 'main',
@@ -41,11 +45,15 @@ app.get('/', async (req, res) => {
 httpServer.listen(PORT, () => console.log('Server on...'));
 
 io.on('connection', (socket) => {
-    console.log('Usuario conectado!') ;
-    socket.emit('message', 'Mensaje desde el servidor');
+    console.log('Usuario conectado!');
 
-    socket.on('notification', data => {
-        console.log(data);
+    socket.on('newMessage', async data => {
+        try {
+            const newMessage = await chat.writeMessage(data.author, data.message);
+            io.sockets.emit('newUserMessage', newMessage);
+        } catch (err) {
+            console.log(err);
+        }
     });
 });
 
