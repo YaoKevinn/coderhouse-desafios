@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <h2 class="title">Carritos</h2>
+    <img
+      class="add-btn"
+      src="/assets/add.svg"
+      alt="add"
+      (click)="openNewCartDialog()"
+    />
+  </div>
+  <div class="cart-section">
+    <div class="row">
+      <input class="custom-input" type="text" [formControl]="cartIdControl" placeholder="Ingresá un id de carrito">
+      <div class="search-btn" (click)="searchBtnClicked()">
+        <p>Buscar</p>
+      </div>
+    </div>
+    <div class="cart-card" *ngIf="idToShow">
+      <p class="id-title">ID del carrito: {{ idToShow }}  <span *ngIf="isNewCart" class="new-text">NUEVO 🔥</span></p>
+
+      <p class="products-in-cart-text">Productos en carrito</p>
+      <div class="existing-products">
+        <p *ngIf="productsInCart.length == 0">Carrito vacío</p>
+        <div class="product-card" *ngFor="let product of productsInCart">
+          <img [src]="product.foto" alt="foto" />
+          <p class="product-name">{{ product.nombre }}</p>
+          <div class="row">
+            <p class="product-stock">Disponible: {{ product.stock }}</p>
+            <p class="product-price">U$D {{ product.precio }}</p>
+          </div>
+          <div class="action-row">
+            <div class="action-remove" (click)="removeProductFromCart(product)">
+              <img class="action-btn" src="/assets/remove.svg" alt="edit" />
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <p class="products-not-in-cart-text">¿Desea agregar más productos al carrito?</p>
+    <div class="existing-products">
+      <p *ngIf="productsNotInCart.length == 0">Ya tenés todos los productos en carrito</p>
+      <div class="product-card" *ngFor="let product of productsNotInCart">
+        <img [src]="product.foto" alt="foto" />
+        <p class="product-name">{{ product.nombre }}</p>
+        <div class="row">
+          <p class="product-stock">Disponible: {{ product.stock }}</p>
+          <p class="product-price">U$D {{ product.precio }}</p>
+        </div>
+        <img
+          class="add-btn"
+          src="/assets/add.svg"
+          alt="add"
+          (click)="addProductToCart(product)"
+        />
+    </div>
+    </div>
+  </div>
+</div>

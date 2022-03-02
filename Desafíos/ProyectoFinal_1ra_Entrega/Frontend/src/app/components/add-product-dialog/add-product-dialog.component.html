@@ -1,0 +1,16 @@
+<div class="container">
+  <h2 class="modal-title">Agregar un nuevo producto</h2>
+  <input class="custom-input" type="text" [formControl]="nameControl" placeholder="Nombre" />
+  <input class="custom-input" type="text" [formControl]="descriptionControl" placeholder="Descripción" />
+  <input class="custom-input" type="text" [formControl]="codeControl" placeholder="Código" />
+  <input class="custom-input" type="text" [formControl]="priceControl" placeholder="Precio" />
+  <input class="custom-input" type="text" [formControl]="stockControl" placeholder="Stock" />
+  <input class="custom-input" type="text" [formControl]="photoControl" placeholder="Foto (url)" />
+
+  <p class="preview-text">Previsualizar photo:</p>
+  <img *ngIf="photoControl.value !== ''" [src]="photoControl.value" alt="photo" />
+
+  <div class="confirm-btn" (click)="addProduct()">
+    <p>Agregar</p>
+  </div>
+</div>

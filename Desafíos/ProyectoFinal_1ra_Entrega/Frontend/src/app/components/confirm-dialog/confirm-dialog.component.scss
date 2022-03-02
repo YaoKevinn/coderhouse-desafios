@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .text-body {
+    color: #FFFFFF;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    .cancel-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: 1px solid #E5F977;
+      border-radius: 20px;
+      padding: 0.5em;
+      cursor: pointer;
+
+      p {
+        margin: 0;
+        color: #E5F977;
+      }
+    }
+
+    .confirm-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #E5F977;
+      border-radius: 20px;
+      padding: 0.5em;
+      cursor: pointer;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
