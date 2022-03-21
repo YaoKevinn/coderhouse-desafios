@@ -1,0 +1,79 @@
+// Crear una base de datos llamada ecommerce que contenga dos colecciones: mensajes y productos.
+use ecommerce
+db.createCollection('mensajes')
+db.createCollection('productos')
+
+
+// 1) Agregar 10 documentos con valores distintos a las colecciones mensajes y productos. El formato de los documentos debe estar en correspondencia con el que venimos utilizando en el entregable con base de datos MariaDB.
+// 2) Definir las claves de los documentos en relación a los campos de las tablas de esa base. En el caso de los productos, poner valores al campo precio entre los 100 y 5000 pesos(eligiendo valores intermedios, ej: 120, 580, 900, 1280, 1700, 2300, 2860, 3350, 4320, 4990).
+
+db.productos.insertMany([
+  { name: "Bitcoin - BTC", thumbnail: "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579", price: 5000 },
+  { name: "Ethereum - ETH", thumbnail: "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880", price: 2929.23 },
+  { name: "Tether - USDT", thumbnail: "https://assets.coingecko.com/coins/images/325/large/Tether-logo.png?1598003707", price: 100 },
+  { name: "Binance Coin - BNB", thumbnail: "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1644979850", price: 3699 },
+  { name: "USD Coin - USDC", thumbnail: "https://assets.coingecko.com/coins/images/6319/large/USD_Coin_icon.png?1547042389", price: 101 },
+  { name: "XRP - XRP", thumbnail: "https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1605778731", price: 200 },
+  { name: "Terra - LUNA", thumbnail: "https://assets.coingecko.com/coins/images/8284/large/luna1557227471663.png?1567147072", price: 3780 },
+  { name: "Solana - SOL", thumbnail: "https://assets.coingecko.com/coins/images/4128/large/solana.png?1640133422", price: 2540 },
+  { name: "Cardano - ADA", thumbnail: "https://assets.coingecko.com/coins/images/975/large/cardano.png?1547034860", price: 367 },
+  { name: "Avalanche - AVAX", thumbnail: "https://assets.coingecko.com/coins/images/12559/large/coin-round-red.png?1604021818", price: 1958 }
+])
+
+db.messages.insertMany([
+    {author :"yao.chienhsi@gmail.com",message :"Hola que tal tu como estas?",creationTime :"2022-03-10T03:34:04.416Z"},
+    {author :"kevin.yao@gmail.com",message :"bien y vos?",creationTime :"2022-03-20T06:04:56.098Z"},
+    {author :"yao.chienhsi@gmail.com",message :"bien bien",creationTime :"2022-03-20T06:05:10.453Z"},
+    {author :"kevin.yao@gmail.com",message :"seguro que bien?",creationTime :"2022-03-20T06:06:25.392Z"},
+    {author :"yao.chienhsi@gmail.com",message :"segurisimo",creationTime :"2022-03-20T06:06:32.355Z"},
+    {author :"yao.chienhsi@gmail.com",message :"vos todo en orden?",creationTime :"2022-03-20T06:07:20.861Z"},
+    {author :"kevin.yao@gmail.com",message :"por suerte que si",creationTime :"2022-03-20T06:07:27.555Z"},
+    {author :"yao.chienhsi@gmail.com",message :"me alegro",creationTime :"2022-03-20T06:07:33.376Z"},
+    {author :"kevin.yao@gmail.com",message :"bueno chau",creationTime :"2022-03-20T06:07:39.403Z"},
+    {author :"yao.chienhsi@gmail.com",message :"chau",creationTime :"2022-03-20T06:07:43.697Z"}
+])
+
+
+// 3) Listar todos los documentos en cada colección.
+db.productos.find()
+db.mensajes.find()
+
+
+// 4) Mostrar la cantidad de documentos almacenados en cada una de ellas.
+db.productos.estimatedDocumentCount()
+db.mensajes.estimatedDocumentCount()
+
+/* 5) Realizar un CRUD sobre la colección de productos: */
+
+//  a) Agregar un producto más en la colección de productos
+db.productos.insertOne({ name: "Binance Coin - BNB", thumbnail: "https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1644979850", price: 3699 })
+
+ // b) Realizar una consulta por nombre de producto específico:
+db.productos.find({ name: "Bitcoin - BTC" })
+ 
+
+// i) Listar los productos con precio menor a 1000 pesos.
+db.productos.find({ price: { $lt: 1000 } })
+
+// ii) Listar los productos con precio entre los 1000 a 3000 pesos.
+db.productos.find({ $and:[{ price:{$gt: 1000} }, { price: {$lt: 3000} }] })
+
+//  iii) Listar los productos con precio mayor a 3000 pesos.
+db.productos.find({ price: { $gt: 3000 } })
+
+// iv) Realizar una consulta que traiga sólo el nombre del tercer producto más barato.
+db.productos.find({}, {name: 1, _id: 0}).sort({ price: 1 }).skip(2).limit(1)
+
+// ) Hacer una actualización sobre todos los productos, agregando el campo stock a todos ellos con un valor de 100.
+db.productos.updateMany({}, {$set: {"stock": 100}})
+
+// d) Cambiar el stock a cero de los productos con precios mayores a 4000 pesos.
+db.productos.updateMany({price: {$gt: 4000}}, {$set: {"stock": 0}})
+
+e) Borrar los productos con precio menor a 1000 pesos
+db.productos.deleteMany({ price: {$lt: 1000} })
+
+// 6) Crear un usuario 'pepe' clave: 'asd456' que sólo pueda leer la base de datos ecommerce. Verificar que pepe no pueda cambiar la información.
+db.createUser({ user: "pepe", pwd: "asd456", roles: [{ role: "read", db: "ecommerce" }] })
+
+
