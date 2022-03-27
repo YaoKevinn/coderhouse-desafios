@@ -1,0 +1,40 @@
+.container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: #27292C;
+  gap: 10px;
+
+  .modal-title {
+    color: #E5F977;
+  }
+
+  .custom-input {
+    outline: none;
+    border: none;
+    background-color: #1E2022;
+    padding: 1em 1em;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  .preview-text {
+    margin-top: 20px;
+    color: #ffffff;
+  }
+
+  .confirm-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5F977;
+    border-radius: 20px;
+    padding: 0.5em;
+    cursor: pointer;
+
+    p {
+      margin: 0;
+    }
+  }
+}

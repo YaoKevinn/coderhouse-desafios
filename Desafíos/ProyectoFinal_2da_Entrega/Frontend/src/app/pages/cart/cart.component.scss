@@ -1,0 +1,201 @@
+.container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    color: #FFF;
+    margin: 0;
+  }
+
+  .add-btn {
+    margin-left: 0.5em;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+  }
+
+  .cart-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .custom-input {
+      width: 200px;
+      outline: none;
+      border: none;
+      background-color: #27292C;
+      padding: 1em 1em;
+      border-radius: 20px;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+
+    .search-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #E5F977;
+      border-radius: 20px;
+      padding: 0.5em;
+      cursor: pointer;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .cart-card {
+      width: 100%;
+      padding: 1em;
+      margin: 2em 2em 0 0;
+      background-color: #27292C;
+      display: flex;
+      flex-direction: column;
+      color: #FFFFFF;
+
+      .id-title {
+        font-size: 18px;
+
+        .new-text {
+          color: rgb(255, 128, 0);
+          margin-left: 0.5em;
+        }
+      }
+
+      .products-in-cart-text {
+        color: #E5F977;
+        font-size: 18px;
+        margin: 1em 0;
+      }
+
+      .products-not-in-cart-text {
+        color: #E5F977;
+        font-size: 18px;
+        margin: 2em 0 1em 0;
+      }
+
+      .existing-products {
+        display: flex;
+        gap: 1em;
+
+        .product-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0.5em;
+          background-color: #27292C;
+          border-radius: 4px;
+          gap: 5px;
+          box-shadow: 0 1px 2px rgba(0,0,0,0.07),
+                    0 2px 4px rgba(0,0,0,0.07),
+                    0 4px 8px rgba(0,0,0,0.07),
+                    0 8px 16px rgba(0,0,0,0.07),
+                    0 16px 32px rgba(0,0,0,0.07),
+                    0 32px 64px rgba(0,0,0,0.07);
+
+          img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+          }
+
+          .product-name {
+            color: #FFFFFF;
+            font-size: 14px;
+            align-self: flex-start;
+            margin-bottom: 0.5em;
+          }
+
+          .row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .product-stock {
+              color: #C8C8C8;
+              font-size: 12px;
+            }
+
+            .product-price {
+              padding: 0.3em 0.8em;
+              border-radius: 4px;
+              background-color: #E5F977;
+              font-size: 10px;
+              color: #27292C;
+            }
+          }
+
+          .add-btn {
+            margin-left: 0.5em;
+            position: relative;
+            top: 1px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+          }
+
+          .action-row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 5px;
+
+            .action-remove {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #f97c7c;
+              border-radius: 50%;
+              width: 30px;
+              height: 30px;
+              cursor: pointer;
+            }
+
+            .action-add {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #E5F977;
+              border-radius: 50%;
+              width: 30px;
+              height: 30px;
+              cursor: pointer;
+            }
+
+            .action-edit {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #E5F977;
+              border-radius: 50%;
+              width: 30px;
+              height: 30px;
+              cursor: pointer;
+            }
+
+            .action-btn {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "coderhouse-backend-ecommerce",
+  "private_key_id": "99591ce6041a3415b4095d21270c7634c0c79721",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCRA/2bnu2gBD/X\nrFGr4ifm+i4OhRNVopsavDPuqYbO/Vd90YpPsPr8tXbrStshcWQUZHoM6h6YN7C4\nEKIZDRA0OwP9P+SWUzwKlLOlgmewvxZcFFtv3QgG2tvaD0x3ZtYa37xKFT1De41v\nefD0lMGWn3s9hVLUGMtCBpmC5L+6sCH1rU/TtNwLbxulr4J4z9iDRCJ1ziqYUpl7\nfRvoMNPN6w6XE1DJrEH/JcvKl2/c346Xol+AEVM8KfYj/P9W08eTidMvVkE4sYdZ\nYieg5XPUl5Uy04YImtp3Z/Dsy8lGTrqEVhyosNtDAKcQt54wXVMI0lA8Lm4wEmxQ\nW/5v3hR1AgMBAAECggEAAuSAvEgvBrxW9qscBPDxqVCPtx/t6w0fiWi8I3RTuVDB\n3ENf/idyVjSbbuWTGedsXuDDM3s/CXvA5WcFiLjjPBt6QKSz31DBN5fQPoqrnVGu\ndT89tK1Ewfg/HuojtRUCy83vME4cpvoxr8nPpd1KwEGloGxGou7srQA7MypzbZqa\nnlhww2gYb5qphT//Tw2g4ql5pn868nL8ILcmPxz7f4q/AqrrahQeO67Vuj0bYXw5\ngP5OpUrJsZ7bXAxYo+cHXK2SWy9MvJPWSigY14nJIDZSl/0RygibwKg1w7SAfMHN\nsiXKEfKCJaV1ClQ+smYOVrO2jQpOGa9QXYwOByoNAQKBgQDF1PW7t0jU1xjiGsCn\ns8jz1jjUFl/dP7BE20ROtR0BfCwLNyG5eDw4ut6XTc0I+BsoTTqyQDAjC1S89eLN\nS8C6mfs23T68BdfSdFzkkkW5hHb8NDK1Rn9xtEaYqgb4GImlB54+kjn1F8yOx91D\nvUdslsJRqPLzdiklCBTuVOB7dQKBgQC7p3x3G+k+cEpzVH0Qtg7iqSej9NME5xDD\nn27oRUs4SyNRPAW+4FbDDSNvOOsuIjBBboYZ6o8v0SjY2Y+bsb4Opdox1hmwmWcG\nUAPwu5EOqueyovKFPsYFFMyQucgoUmHbFxW50AxAK/dmUOyPfdsOMpplunnGarbk\nHwWXeskVAQKBgQDDW0oSRasxKvuSg9KNiLc/OuNBZJrj8/mP9WrdwnHTPpiLtrSh\n3z6w0q/uf9CiM8c1pBX7YfFnGdBjDPkbu9ulKVtu0UobCDYYx/nXaS5bRZjt8mnE\nospFMT2pkfVx12FNS1mT9ngvNII22N0CAI7gh3t6gjjv/FYjEHkC5WQL5QKBgATA\nzUpHDrViKsCZF0HhGqdrGXHxtZaeM7KAy1JezvTyEkbwekTHcesm3grnKi3U99vw\nbL0jT9UqOxqjCBwteF7unIQ+pA/xEsb6J99lINt6QLwpnHL7kBB44mWYDxXWYFwo\nTYiTWHwXoQCadCN+UJofdgG1o3f/I/rLPl0D4ywBAoGASsHd+iH7L0v0SJ6EtnEZ\n/m6Efzqa+eujOvosDd1dOWpqFl9Zw78oMZ0sjnoFfP1+pGU1KB/DWkHNjnkIzw1N\n/tSBHsYSjqpWePpA1avKcYC6Lr/urr2rrwU5bdo52ZJ6N4T4IzRYpZ34TWGrVNmy\n/MPd1qGAY1Ymx4kkzfaTRiI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-h644w@coderhouse-backend-ecommerce.iam.gserviceaccount.com",
+  "client_id": "115965011163644762324",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-h644w%40coderhouse-backend-ecommerce.iam.gserviceaccount.com"
+}
