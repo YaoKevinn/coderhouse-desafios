@@ -1,0 +1,75 @@
+{
+  "entities": {
+    "authors": {
+      "k@y": {
+        "email": "k@y",
+        "nombre": "kevin",
+        "apellido": "yao",
+        "edad": 25,
+        "alias": "yaokevinn",
+        "avatar": "https://www.google.com"
+      },
+      "v@z": {
+        "email": "v@z",
+        "nombre": "qweqweqwe",
+        "apellido": "qweqweqwe",
+        "edad": 23,
+        "alias": "qweqwe",
+        "avatar": "https://cdn.dribbble.com/users/7057015/screenshots/15127355/thor_4x.png"
+      },
+      "y@g": {
+        "email": "y@g",
+        "nombre": "zxczxc",
+        "apellido": "zxczxczxc",
+        "edad": 23,
+        "alias": "zxczxcz",
+        "avatar": "https://cdn.dribbble.com/users/7057015/screenshots/15127355/thor_4x.png"
+      }
+    },
+    "post": {
+      "1": {
+        "id": "1",
+        "author": "k@y",
+        "text": "hola que tal como estas?",
+        "creationTime": "2022-04-06T02:03:15.236Z"
+      },
+      "2": {
+        "author": "v@z",
+        "text": "holaaaaaaaa",
+        "creationTime": "2022-04-06T03:34:00.556Z",
+        "id": "2"
+      },
+      "3": {
+        "author": "y@g",
+        "text": "que tal",
+        "creationTime": "2022-04-06T03:37:15.703Z",
+        "id": "3"
+      },
+      "4": {
+        "author": "y@g",
+        "text": "como va",
+        "creationTime": "2022-04-06T03:37:19.726Z",
+        "id": "4"
+      },
+      "5": {
+        "author": "y@g",
+        "text": "como andan?",
+        "creationTime": "2022-04-06T03:37:25.609Z",
+        "id": "5"
+      }
+    },
+    "posts": {
+      "mensajes": {
+        "id": "mensajes",
+        "mensajes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      }
+    }
+  },
+  "result": "mensajes"
+}
