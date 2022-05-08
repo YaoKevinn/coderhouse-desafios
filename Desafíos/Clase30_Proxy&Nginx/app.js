@@ -2,6 +2,9 @@
 const express = require("express");
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
+const cluster = require("cluster");
+const os = require("os");
+const numeroCPUs = os.cpus().length;
 
 // Passport
 const passport = require("passport");
@@ -71,9 +74,28 @@ app.use("/api/auth", authRouter);
 app.use("/api/randoms", randomsRouter);
 app.use("", sectionRouter);
 
-httpServer.listen(args.port, () =>
-    console.log(`App initialized on port ${args.port}...`)
-);
+if (args.modo && args.modo === 'cluster') {
+    if (cluster.isPrimary) {
+        //vamos a crear los clones de ese proceso principal
+        for (let i = 0; i < numeroCPUs; i++) {
+            cluster.fork();
+        }
+    
+        cluster.on("exit", (worker, code, signal) => {
+            console.log(`Process ${worker.process.pid} destroyed!`);
+            cluster.fork();
+        });
+    } else {
+        httpServer.listen(args.port, () =>
+            console.log(`App initialized on port ${args.port} in cluster mode...`)
+        );
+    }   
+} else {
+    httpServer.listen(args.port, () =>
+            console.log(`App initialized on port ${args.port} in fork mode...`)
+        );
+}
+
 
 io.on("connection", (socket) => {
     console.log("Usuario conectado!");
