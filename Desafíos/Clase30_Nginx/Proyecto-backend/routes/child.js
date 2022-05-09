@@ -1,3 +1,7 @@
+const parseArgs = require('minimist');
+const defaultOptions = { default: { port: 8080 } }
+const args = parseArgs(process.argv.slice(2), defaultOptions);
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max) + 1;
 }

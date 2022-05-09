@@ -4,7 +4,7 @@ const { fork } = require('child_process');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-   const cant = req.query.cant ?? 100000000;
+   const cant = req.query.cant ? req.query.cant : 100000000;
    
    const child = fork('./routes/child.js');
 

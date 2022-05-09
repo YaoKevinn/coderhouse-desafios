@@ -40,7 +40,7 @@ const app = express();
 const httpServer = new HttpServer(app);
 const io = new IOServer(httpServer);
 
-app.use(express.static(__dirname + "/public"));
+// app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
@@ -73,6 +73,10 @@ app.use("/api/products-test", productsTestRouter);
 app.use("/api/auth", authRouter);
 app.use("/api/randoms", randomsRouter);
 app.use("", sectionRouter);
+
+app.get("/datos",(req,res)=>{
+    res.send(`<h1>soy el servidor express con datos corriendo en el proceso  ${process.pid}</h1>`)
+})
 
 if (args.modo && args.modo === 'cluster') {
     if (cluster.isPrimary) {
