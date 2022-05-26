@@ -1628,3 +1628,7 @@ Statistical profiling result from isolate-0x128008000-29184-v8.log, (2187 ticks,
       1  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:401:23
       1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:495:28
 
+
+本人姚建璽授權姚采霏小姐辦理銀行存款繼承事宜，特此聲明
+檢附護照影本
+
