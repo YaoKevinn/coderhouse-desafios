@@ -1,0 +1,63 @@
+[
+  {
+    "nombre": "Macbook 2021 16.2' M1 Pro",
+    "description": "Macbook 2021 16.2' M1 Pro",
+    "codigo": "123456",
+    "foto": "https://i.blogs.es/bb1d2e/1366_2000/1366_2000.jpg",
+    "precio": 3000,
+    "stock": 300,
+    "timestamp": "2022-03-01T05:02:15.109Z",
+    "id": "1",
+    "descripcion": "Macbook 2021 16.2' M1 Pro"
+  },
+  {
+    "nombre": "iPhone 12 Pro Max",
+    "description": "iPhone 12 Pro Max",
+    "codigo": "123456",
+    "foto": "https://i0.wp.com/hipertextual.com/wp-content/uploads/2020/11/DSC03230-scaled.jpg?w=2340&ssl=1",
+    "precio": 1350,
+    "stock": 450,
+    "timestamp": "2022-03-01T05:02:39.821Z",
+    "id": "2"
+  },
+  {
+    "nombre": "AirPods Pro",
+    "description": "AirPods Pro",
+    "codigo": "123456789",
+    "foto": "https://www.apple.com/newsroom/images/tile-images/Apple_airpods-pro_new-design-102819.jpg.og.jpg?202112021638",
+    "precio": 400,
+    "stock": 200,
+    "timestamp": "2022-03-02T04:07:09.464Z",
+    "id": "3"
+  },
+  {
+    "nombre": "iMac 24'",
+    "description": "iMac 24'",
+    "codigo": "123456789",
+    "foto": "https://expertreviews.b-cdn.net/sites/expertreviews/files/styles/gallery_adv/public/2021/05/m1_apple_imac_24in_review_-_0004.jpeg?itok=kSeWF-SR",
+    "precio": 2100,
+    "stock": 200,
+    "timestamp": "2022-03-02T04:11:16.825Z",
+    "id": "4"
+  },
+  {
+    "nombre": "Apple Apple Watch Series 6",
+    "description": " Apple Apple Watch Series 6",
+    "codigo": "123456789",
+    "foto": "https://www.apple.com/newsroom/images/product/watch/standard/Apple_delivers-apple-watch-series-6_09152020_big.jpg.large.jpg",
+    "precio": 400,
+    "stock": 500,
+    "timestamp": "2022-03-02T23:34:52.037Z",
+    "id": "5"
+  },
+  {
+    "nombre": "Apple HomePod Mini",
+    "description": "Apple HomePod Mini",
+    "codigo": "123456789",
+    "foto": "https://i.blogs.es/fdae4f/apple-homepod-mini-00/450_1000.jpg",
+    "precio": 200,
+    "stock": 450,
+    "timestamp": "2022-03-02T23:38:47.869Z",
+    "id": "6"
+  }
+]

@@ -1,0 +1,27 @@
+.container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: #27292C;
+  gap: 10px;
+
+  .modal-title {
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+
+  .confirm-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5F977;
+    border-radius: 20px;
+    padding: 0.5em;
+    cursor: pointer;
+
+    p {
+      margin: 0;
+    }
+  }
+}

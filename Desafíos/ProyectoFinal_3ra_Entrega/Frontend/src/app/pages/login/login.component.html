@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="login-card">
+    <p class="modal-title">Login</p>
+
+    <input class="custom-input" type="text" [formControl]="mailControl" placeholder="Nombre" />
+    <input class="custom-input" type="text" [formControl]="passwordControl" placeholder="Descripción" />
+
+    <div class="confirm-btn" (click)="login()">
+      <p>Iniciar sesión</p>
+    </div>
+
+    <p style="text-align: center" (click)="goToSignUp()">Registrarte</p>
+  </div>
+</div>

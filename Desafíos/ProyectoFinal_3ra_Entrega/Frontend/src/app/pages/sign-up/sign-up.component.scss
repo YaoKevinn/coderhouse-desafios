@@ -1,0 +1,50 @@
+.container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  height: 80vh;
+
+  .login-card {
+    padding: 2em;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #27292C;
+    gap: 10px;
+
+    .modal-title {
+      text-align: center;
+      color: #E5F977;
+      font-size: 20px;
+    }
+
+    .custom-input {
+      outline: none;
+      border: none;
+      background-color: #1E2022;
+      padding: 1em 1em;
+      border-radius: 20px;
+      font-size: 14px;
+      color: #FFFFFF;
+    }
+
+    .confirm-btn {
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #E5F977;
+      border-radius: 20px;
+      padding: 0.5em;
+      cursor: pointer;
+      color: #1E2022;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
