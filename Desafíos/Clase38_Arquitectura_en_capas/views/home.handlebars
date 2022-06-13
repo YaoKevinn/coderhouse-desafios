@@ -1,0 +1,51 @@
+    <div class="container">
+        {{!-- <h2 class="form-title">Agregar un producto</h2>
+        <form class="upload-form" id="productForm">
+            <input class="input" type="text" name="title" id="titleInput" placeholder="Título"/>
+
+            <div class="divider"></div>
+
+            <input class="input" type="text" name="price" id="priceInput" placeholder="Precio" />
+
+            <div class="divider"></div>
+
+            <input class="input" type="text" name="thumbnail" id="thumbnailInput" placeholder="Photo del producto"/>
+
+            <input class="btn" value="Agregar" onclick="addBtnClicked()" />
+        </form>
+
+        <br>
+        <br> --}}
+        <div class="header-row">
+            <h3>Bienvenido, {{username}}</h3>
+            <button class="logout-btn" value="Desloguear" onclick="logout()">Desloguear</button>
+        </div>
+        
+        <div class="list-container">
+            <div id="list-section" class="product-list">
+                <p class="form-title">Lista de productos</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="list-container">
+            <div class="product-list">
+                <p class="form-title">Centro de mensajes (Compresión: <span id="compresion"></span>%)</p>
+                <input class="user-input" type="text" name="email" id="emailInput" placeholder="Ingrese su email"/>
+                <input class="user-input" type="text" name="name" id="nameInput" placeholder="Ingrese su nombre"/>
+                <input class="user-input" type="text" name="firstName" id="firstNameInput" placeholder="Ingrese su apellido"/>
+                <input class="user-input" type="text" name="year" id="yearInput" placeholder="Ingrese su edad"/>
+                <input class="user-input" type="text" name="alias" id="aliasInput" placeholder="Ingrese su alias"/>
+                <input class="user-input" type="text" name="avatar" id="avatarInput" placeholder="Ingrese su avatar"/>
+
+                <div id="list-chat">
+
+                </div>
+                <input class="user-input" type="text" name="message" id="messageInput" placeholder="Escribí aquí tu mensaje"/>
+                <button class="btn" value="Agregar" onclick="sendBtnClicked()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
