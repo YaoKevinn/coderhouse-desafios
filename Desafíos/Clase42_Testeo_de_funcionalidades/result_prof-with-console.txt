@@ -1,0 +1,1531 @@
+Statistical profiling result from isolate-0x110008000-29899-v8.log, (1775 ticks, 23 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     60    3.4%          /usr/lib/system/libsystem_c.dylib
+     33    1.9%          /usr/lib/system/libsystem_malloc.dylib
+     30    1.7%          /usr/lib/libc++.1.dylib
+      3    0.2%          /usr/lib/system/libsystem_platform.dylib
+      2    0.1%          /usr/lib/system/libsystem_kernel.dylib
+      2    0.1%          /usr/lib/system/libdyld.dylib
+      2    0.1%          /usr/lib/libc++abi.dylib
+      1    0.1%          /usr/lib/libobjc.A.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     17    1.0%    1.0%  LazyCompile: *resolve node:path:1091:10
+      5    0.3%    0.3%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:630:37
+      4    0.2%    0.2%  LazyCompile: *readPackage node:internal/modules/cjs/loader:291:21
+      2    0.1%    0.1%  LazyCompile: *realpathSync node:fs:2439:22
+      2    0.1%    0.1%  LazyCompile: *Module._resolveLookupPaths node:internal/modules/cjs/loader:668:38
+      1    0.1%    0.1%  RegExp: ^((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])$
+      1    0.1%    0.1%  RegExp: (?:^|\/)\.?\.$
+      1    0.1%    0.1%  LazyCompile: *dirname node:path:1275:10
+      1    0.1%    0.1%  LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1    0.1%    0.1%  Function: ^nextTick node:internal/process/task_queues:103:18
+      1    0.1%    0.1%  Function: ^measureRoundTripTime /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/monitor.js:281:30
+      1    0.1%    0.1%  Function: ^Readable.on node:internal/streams/readable:886:33
+      1    0.1%    0.1%  Function: ^BinMsg /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/commands.js:545:16
+
+ [C++]:
+   ticks  total  nonlib   name
+   1032   58.1%   62.9%  T _napi_create_arraybuffer
+    134    7.5%    8.2%  T _posix_spawnattr_init
+     57    3.2%    3.5%  T _voucher_mach_msg_adopt
+     40    2.3%    2.4%  T _mach_msg_server_once
+     39    2.2%    2.4%  T _kdebug_trace
+     31    1.7%    1.9%  T __kernelrpc_mach_vm_protect_trap
+     28    1.6%    1.7%  t __pthread_bsdthread_init
+     22    1.2%    1.3%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+     20    1.1%    1.2%  T ___pthread_init
+     15    0.8%    0.9%  T _host_request_notification
+     11    0.6%    0.7%  t ___pfz_setup
+     11    0.6%    0.7%  T _mach_vm_map
+      9    0.5%    0.5%  t _Builtins_LoadIC
+      9    0.5%    0.5%  T _task_restartable_ranges_synchronize
+      7    0.4%    0.4%  t _Builtins_StringEqual
+      6    0.3%    0.4%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      6    0.3%    0.4%  t __pthread_strtoul
+      5    0.3%    0.3%  t __os_nospin_lock_unlock_slow
+      5    0.3%    0.3%  t _Builtins_StringSubstring
+      4    0.2%    0.2%  t __os_nospin_lock_lock_slow
+      4    0.2%    0.2%  t _Builtins_LoadIC_NoFeedback
+      3    0.2%    0.2%  t __pthread_mutex_global_init
+      3    0.2%    0.2%  t _Builtins_StrictEqual_Baseline
+      3    0.2%    0.2%  t _Builtins_StoreIC
+      3    0.2%    0.2%  t _Builtins_FindOrderedHashMapEntry
+      3    0.2%    0.2%  T __kernelrpc_mach_port_get_refs
+      2    0.1%    0.1%  t __os_once_gate_wait
+      2    0.1%    0.1%  t __bn_sqr8x_mont
+      2    0.1%    0.1%  t _Builtins_StringPrototypeCharCodeAt
+      2    0.1%    0.1%  t _Builtins_StringAdd_CheckNone
+      2    0.1%    0.1%  t _Builtins_StarHandler
+      2    0.1%    0.1%  t _Builtins_MapPrototypeSet
+      2    0.1%    0.1%  t _Builtins_LoadICTrampoline_Megamorphic
+      2    0.1%    0.1%  t _Builtins_KeyedLoadIC_Megamorphic
+      2    0.1%    0.1%  t _Builtins_KeyedLoadIC
+      2    0.1%    0.1%  t _Builtins_GetNamedPropertyHandler
+      2    0.1%    0.1%  t _Builtins_Call_ReceiverIsNotNullOrUndefined_Baseline_Compact
+      2    0.1%    0.1%  t _Builtins_Call_ReceiverIsAny
+      2    0.1%    0.1%  t _Builtins_BaselineOutOfLinePrologue
+      2    0.1%    0.1%  T _mach_vm_allocate
+      2    0.1%    0.1%  T __platform_strcmp
+      1    0.1%    0.1%  t defaultContains(BinaryProperty const&, int, UProperty)
+      1    0.1%    0.1%  t _doapr_outch
+      1    0.1%    0.1%  t __enlarge
+      1    0.1%    0.1%  t _Builtins_WeakMapPrototypeSet
+      1    0.1%    0.1%  t _Builtins_WeakMapLookupHashIndex
+      1    0.1%    0.1%  t _Builtins_ToString
+      1    0.1%    0.1%  t _Builtins_ToBooleanForBaselineJump
+      1    0.1%    0.1%  t _Builtins_TestGreaterThanOrEqualHandler
+      1    0.1%    0.1%  t _Builtins_StringPrototypeStartsWith
+      1    0.1%    0.1%  t _Builtins_StringPrototypeIncludes
+      1    0.1%    0.1%  t _Builtins_StringIndexOf
+      1    0.1%    0.1%  t _Builtins_StrictEqual_WithFeedback
+      1    0.1%    0.1%  t _Builtins_StoreIC_NoFeedback
+      1    0.1%    0.1%  t _Builtins_ShiftRightLogicalSmi_Baseline
+      1    0.1%    0.1%  t _Builtins_MathMin
+      1    0.1%    0.1%  t _Builtins_MapPrototypeGet
+      1    0.1%    0.1%  t _Builtins_LoadIC_StringLength
+      1    0.1%    0.1%  t _Builtins_LoadIC_Megamorphic
+      1    0.1%    0.1%  t _Builtins_LessThan_Baseline
+      1    0.1%    0.1%  t _Builtins_KeyedStoreIC_Megamorphic
+      1    0.1%    0.1%  t _Builtins_JumpIfToBooleanTrueHandler
+      1    0.1%    0.1%  t _Builtins_JumpIfToBooleanFalseConstantHandler
+      1    0.1%    0.1%  t _Builtins_JSBuiltinsConstructStub
+      1    0.1%    0.1%  t _Builtins_HandleApiCall
+      1    0.1%    0.1%  t _Builtins_GetProperty
+      1    0.1%    0.1%  t _Builtins_FunctionPrototypeCall
+      1    0.1%    0.1%  t _Builtins_FastNewClosure
+      1    0.1%    0.1%  t _Builtins_Call_ReceiverIsNotNullOrUndefined
+      1    0.1%    0.1%  t _Builtins_CallProperty2Handler
+      1    0.1%    0.1%  t _Builtins_CallFunction_ReceiverIsNullOrUndefined
+      1    0.1%    0.1%  t _Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_BuiltinExit
+      1    0.1%    0.1%  t _Builtins_BitwiseAnd_Baseline
+      1    0.1%    0.1%  t _Builtins_BaselineLeaveFrame
+      1    0.1%    0.1%  t _Builtins_ArrayPrototypeJoin
+      1    0.1%    0.1%  t _Builtins_Add_Baseline
+      1    0.1%    0.1%  T node::GetExecPath(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&)
+      1    0.1%    0.1%  T _semaphore_wait_signal_trap
+      1    0.1%    0.1%  T _pthread_cond_wait
+      1    0.1%    0.1%  T _asn1_item_embed_free
+      1    0.1%    0.1%  T __pthread_exit_if_canceled
+      1    0.1%    0.1%  T ___platform_sigaction
+
+ [Summary]:
+   ticks  total  nonlib   name
+     38    2.1%    2.3%  JavaScript
+   1581   89.1%   96.3%  C++
+     90    5.1%    5.5%  GC
+    133    7.5%          Shared libraries
+     23    1.3%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    927   68.9%   52.2%  T _napi_create_arraybuffer
+     54    4.0%    3.0%  T _voucher_mach_msg_adopt
+     40    3.0%    2.3%  T _mach_msg_server_once
+     39    2.9%    2.2%  T _kdebug_trace
+     29    2.2%    1.6%  T __kernelrpc_mach_vm_protect_trap
+     28    2.1%    1.6%  t __pthread_bsdthread_init
+     24    1.8%    1.4%  t _Builtins_KeyedLoadIC_Megamorphic
+     22    1.6%    1.2%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+     20    1.5%    1.1%  T ___pthread_init
+     15    1.1%    0.8%  t _Builtins_FindOrderedHashMapEntry
+     11    0.8%    0.6%  t ___pfz_setup
+     11    0.8%    0.6%  T _mach_vm_map
+     10    0.7%    0.6%  t _Builtins_MapPrototypeGet
+      9    0.7%    0.5%  t _Builtins_LoadIC
+      6    0.4%    0.3%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      5    0.4%    0.3%  t __pthread_strtoul
+      5    0.4%    0.3%  t _Builtins_StringSubstring
+      5    0.4%    0.3%  t _Builtins_StringEqual
+      4    0.3%    0.2%  t _Builtins_LoadIC_NoFeedback
+      3    0.2%    0.2%  t __pthread_mutex_global_init
+      3    0.2%    0.2%  t __os_nospin_lock_lock_slow
+      3    0.2%    0.2%  t _Builtins_StrictEqual_Baseline
+      3    0.2%    0.2%  t _Builtins_StoreIC
+      3    0.2%    0.2%  t _Builtins_MapPrototypeHas
+      2    0.1%    0.1%  t __os_once_gate_wait
+      2    0.1%    0.1%  t __os_nospin_lock_unlock_slow
+      2    0.1%    0.1%  t _Builtins_StringPrototypeIncludes
+      2    0.1%    0.1%  t _Builtins_StringPrototypeCharCodeAt
+      2    0.1%    0.1%  t _Builtins_StringAdd_CheckNone
+      2    0.1%    0.1%  t _Builtins_StarHandler
+      2    0.1%    0.1%  t _Builtins_MapPrototypeSet
+      2    0.1%    0.1%  t _Builtins_LoadICTrampoline_Megamorphic
+      2    0.1%    0.1%  t _Builtins_KeyedLoadIC
+      2    0.1%    0.1%  t _Builtins_GetNamedPropertyHandler
+      2    0.1%    0.1%  t _Builtins_Call_ReceiverIsNotNullOrUndefined_Baseline_Compact
+      2    0.1%    0.1%  t _Builtins_Call_ReceiverIsAny
+      2    0.1%    0.1%  t _Builtins_BaselineOutOfLinePrologue
+      2    0.1%    0.1%  t _Builtins_ArrayReduce
+      2    0.1%    0.1%  T __platform_strcmp
+      2    0.1%    0.1%  T __kernelrpc_mach_port_get_refs
+      1    0.1%    0.1%  t defaultContains(BinaryProperty const&, int, UProperty)
+      1    0.1%    0.1%  t __enlarge
+      1    0.1%    0.1%  t _Builtins_WeakMapPrototypeSet
+      1    0.1%    0.1%  t _Builtins_WeakMapLookupHashIndex
+      1    0.1%    0.1%  t _Builtins_ToString
+      1    0.1%    0.1%  t _Builtins_ToBooleanForBaselineJump
+      1    0.1%    0.1%  t _Builtins_TestGreaterThanOrEqualHandler
+      1    0.1%    0.1%  t _Builtins_StringPrototypeStartsWith
+      1    0.1%    0.1%  t _Builtins_StringPrototypeEndsWith
+      1    0.1%    0.1%  t _Builtins_StringIndexOf
+      1    0.1%    0.1%  t _Builtins_StrictEqual_WithFeedback
+      1    0.1%    0.1%  t _Builtins_StoreIC_NoFeedback
+      1    0.1%    0.1%  t _Builtins_ShiftRightLogicalSmi_Baseline
+      1    0.1%    0.1%  t _Builtins_MathMin
+      1    0.1%    0.1%  t _Builtins_LoadIC_StringLength
+      1    0.1%    0.1%  t _Builtins_LoadIC_Megamorphic
+      1    0.1%    0.1%  t _Builtins_LessThan_Baseline
+      1    0.1%    0.1%  t _Builtins_KeyedStoreIC_Megamorphic
+      1    0.1%    0.1%  t _Builtins_JumpIfToBooleanTrueHandler
+      1    0.1%    0.1%  t _Builtins_JumpIfToBooleanFalseConstantHandler
+      1    0.1%    0.1%  t _Builtins_JSBuiltinsConstructStub
+      1    0.1%    0.1%  t _Builtins_HandleApiCall
+      1    0.1%    0.1%  t _Builtins_GetProperty
+      1    0.1%    0.1%  t _Builtins_FunctionPrototypeCall
+      1    0.1%    0.1%  t _Builtins_FastNewClosure
+      1    0.1%    0.1%  t _Builtins_DatePrototypeGetMilliseconds
+      1    0.1%    0.1%  t _Builtins_Call_ReceiverIsNotNullOrUndefined
+      1    0.1%    0.1%  t _Builtins_CallProperty2Handler
+      1    0.1%    0.1%  t _Builtins_CallFunction_ReceiverIsNullOrUndefined
+      1    0.1%    0.1%  t _Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_BuiltinExit
+      1    0.1%    0.1%  t _Builtins_BitwiseAnd_Baseline
+      1    0.1%    0.1%  t _Builtins_BaselineLeaveFrame
+      1    0.1%    0.1%  t _Builtins_ArrayPrototypeJoin
+      1    0.1%    0.1%  t _Builtins_Add_Baseline
+      1    0.1%    0.1%  T __pthread_exit_if_canceled
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1032   58.1%  T _napi_create_arraybuffer
+    312   30.2%    Function: ^compileFunction node:vm:308:25
+    307   98.4%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    307  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+    301   98.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    261   86.7%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     40   13.3%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      6    2.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      6  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      5    1.6%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      5  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      5  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3   60.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2   40.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+    216   20.9%    Function: ^readSync node:fs:689:18
+    160   74.1%      Function: ^tryReadSync node:fs:434:21
+    160  100.0%        Function: ^readFileSync node:fs:455:22
+    154   96.3%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    108   70.1%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     46   29.9%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      4    2.5%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      4  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     56   25.9%      LazyCompile: *readFileSync node:fs:455:22
+     56  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     56  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+     56  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     61    5.9%    LazyCompile: *compileFunction node:vm:308:25
+     39   63.9%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+     39  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     39  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+     22   56.4%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     17   43.6%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+     22   36.1%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     22  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+     22  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     22  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+     26    2.5%    Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+     19   73.1%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      3   15.8%        Function: ~<anonymous> node:http:1:1
+      3  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      3  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:262:25
+      2   10.5%        Function: ~<anonymous> node:tls:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      2  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:262:25
+      2   10.5%        Function: ~<anonymous> node:internal/cluster/primary:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    5.3%        LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      1  100.0%          LazyCompile: ~get node:crypto:358:8
+      1  100.0%            t _Builtins_ReflectGet
+      1    5.3%        LazyCompile: ~get node:dns:386:8
+      1  100.0%          t _Builtins_ReflectGet
+      1  100.0%            LazyCompile: *getOwn node:internal/bootstrap/loaders:186:16
+      1    5.3%        Function: ~<anonymous> node:internal/child_process:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    5.3%        Function: ~<anonymous> node:dns:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:262:25
+      1    5.3%        Function: ~<anonymous> node:dgram:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    5.3%        Function: ~<anonymous> node:cluster:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:262:25
+      1    5.3%        Function: ~<anonymous> node:child_process:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    5.3%        Function: ~<anonymous> node:assert:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:262:25
+      1    5.3%        Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    5.3%        Function: ~<anonymous> node:_http_outgoing:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    5.3%        Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    5.3%        Function: ~<anonymous> node:_http_client:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      7   26.9%      Function: ^compileForPublicLoader node:internal/bootstrap/loaders:262:25
+      7  100.0%        Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      7  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      7  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     24    2.3%    Function: ^stat node:internal/modules/cjs/loader:151:14
+     13   54.2%      Function: ^tryFile node:internal/modules/cjs/loader:385:17
+     13  100.0%        Function: ^tryExtensions node:internal/modules/cjs/loader:401:23
+     13  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:495:28
+     13  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+     11   45.8%      Function: ^Module._findPath node:internal/modules/cjs/loader:495:28
+     11  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+     11  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:759:24
+     11  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     24    2.3%    Function: ^read node:internal/modules/package_json_reader:16:14
+     20   83.3%      Function: ^readPackage node:internal/modules/cjs/loader:291:21
+     16   80.0%        Function: ^resolveExports node:internal/modules/cjs/loader:473:24
+     16  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:495:28
+     16  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      2   10.0%        Function: ^readPackageScope node:internal/modules/cjs/loader:322:26
+      2  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    5.0%        LazyCompile: ~resolveExports node:internal/modules/cjs/loader:473:24
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:495:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1    5.0%        Function: ^tryPackage node:internal/modules/cjs/loader:339:20
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:495:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      4   16.7%      LazyCompile: *readPackage node:internal/modules/cjs/loader:291:21
+      4  100.0%        Function: ^tryPackage node:internal/modules/cjs/loader:339:20
+      4  100.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:495:28
+      2   50.0%            LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      2   50.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+     21    2.0%    t _Builtins_KeyedLoadIC_Megamorphic
+     11   52.4%      LazyCompile: *realpathSync node:fs:2439:22
+      6   54.5%        Function: ^toRealPath node:internal/modules/cjs/loader:394:20
+      6  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:385:17
+      5   83.3%            Function: ^tryExtensions node:internal/modules/cjs/loader:401:23
+      1   16.7%            Function: ^tryPackage node:internal/modules/cjs/loader:339:20
+      5   45.5%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:495:28
+      3   60.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      2   66.7%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1   33.3%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      2   40.0%          LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      2  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      3   14.3%      Function: ^Module._findPath node:internal/modules/cjs/loader:495:28
+      2   66.7%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   33.3%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      2    9.5%      LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1   50.0%        LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/tr/address/index.js:1:1
+      1   50.0%        Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GH/address/index.js:1:1
+      2    9.5%      Function: ^realpathSync node:fs:2439:22
+      2  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:394:20
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:385:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:401:23
+      1    4.8%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:495:28
+      1  100.0%        LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1    4.8%      Function: ^_addHeaderLine node:_http_incoming:340:24
+      1  100.0%        Function: ^get node:_http_incoming:108:16
+      1  100.0%          LazyCompile: ~verify /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/server.js:76:11
+      1  100.0%            LazyCompile: ~handleUpgrade /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/server.js:381:18
+      1    4.8%      Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/transports-uws/polling.js:1:1
+     21    2.0%    Function: ^openSync node:fs:581:18
+     21  100.0%      Function: ^readFileSync node:fs:455:22
+     21  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     16   76.2%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     16  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      5   23.8%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      5  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     19    1.8%    t _Builtins_FindOrderedHashMapEntry
+      6   31.6%      t _Builtins_MapPrototypeGet
+      5   83.3%        Function: ^readPackage node:internal/modules/cjs/loader:291:21
+      5  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:322:26
+      4   80.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1   20.0%            Function: ^trySelf node:internal/modules/cjs/loader:442:17
+      1   16.7%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:385:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:401:23
+      5   26.3%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:322:26
+      4   80.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      4  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      3   75.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   25.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1   20.0%        Function: ^trySelf node:internal/modules/cjs/loader:442:17
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      3   15.8%      LazyCompile: *realpathSync node:fs:2439:22
+      3  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:394:20
+      3  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:385:17
+      3  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:401:23
+      2   10.5%      LazyCompile: *readPackage node:internal/modules/cjs/loader:291:21
+      2  100.0%        Function: ^tryPackage node:internal/modules/cjs/loader:339:20
+      2  100.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:495:28
+      1   50.0%            LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1   50.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      2   10.5%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:495:28
+      1   50.0%        LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   50.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    5.3%      LazyCompile: *stat node:internal/modules/cjs/loader:151:14
+      1  100.0%        Function: ^tryFile node:internal/modules/cjs/loader:385:17
+      1  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:401:23
+      1  100.0%            Function: ^tryPackage node:internal/modules/cjs/loader:339:20
+     13    1.3%    LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+     12   92.3%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      2   16.7%        LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:561:29
+      2  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:35:36
+      2  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2   16.7%        Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      2  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    8.3%        Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    8.3%        Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    8.3%        Function: ~<anonymous> node:internal/modules/esm/translators:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    8.3%        Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    8.3%        Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    8.3%        Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    8.3%        Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    8.3%        Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1    7.7%      LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+
+    134    7.5%  T _posix_spawnattr_init
+
+     60    3.4%  /usr/lib/system/libsystem_c.dylib
+     20   33.3%    LazyCompile: *compileFunction node:vm:308:25
+     11   55.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+     11  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     11  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      8   72.7%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      3   27.3%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      9   45.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      9  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      9  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      9  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      3    5.0%    LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:107:28
+      3  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:35:36
+      3  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2    3.3%    LazyCompile: ~toRealPath node:internal/modules/cjs/loader:394:20
+      2  100.0%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:495:28
+      2  100.0%        LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      2  100.0%          LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      2  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.7%    t _Builtins_DatePrototypeGetMilliseconds
+      1  100.0%      LazyCompile: ~cache node:internal/http:26:15
+      1  100.0%        LazyCompile: ~utcDate node:internal/http:21:17
+      1  100.0%          LazyCompile: ~_storeHeader node:_http_outgoing:374:22
+      1  100.0%            LazyCompile: ~writeHead node:_http_server:269:19
+      1    1.7%    t _Builtins_ArrayReduce
+      1  100.0%      LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/streamroller/lib/fileNameFormatter.js:32:10
+      1  100.0%        LazyCompile: ~RollingFileWriteStream /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/streamroller/lib/RollingFileWriteStream.js:39:14
+      1  100.0%          LazyCompile: ~RollingFileStream /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/streamroller/lib/RollingFileStream.js:5:14
+      1  100.0%            LazyCompile: ~openTheStream /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/log4js/lib/appenders/file.js:45:25
+      1    1.7%    T _napi_create_arraybuffer
+      1  100.0%      LazyCompile: ~callSiteToString /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/depd/lib/compat/index.js:21:76
+      1  100.0%        LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/depd/lib/compat/index.js:54:16
+      1  100.0%          Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/depd/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.7%    LazyCompile: ~validate_config /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%      LazyCompile: ~exports.find /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/bcrypt/bcrypt.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.7%    LazyCompile: ~u /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GB/address/county.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GB/address/county.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.7%    LazyCompile: ~setup /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/node_modules/debug/src/common.js:7:15
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/node_modules/debug/src/node.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.7%    LazyCompile: ~requestCheck /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/server.js:134:17
+      1  100.0%      LazyCompile: ~scheduleServerCheck /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/topology.js:654:58
+      1  100.0%        LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:67:35
+      1    1.7%    LazyCompile: ~prepare /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/server.js:327:12
+      1  100.0%      LazyCompile: ~handleRequest /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/server.js:343:18
+      1  100.0%        LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/server.js:479:30
+      1  100.0%          LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/socket.io/dist/index.js:262:27
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.7%    LazyCompile: ~p /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/sv/commerce/color.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/sv/commerce/color.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.7%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/mk/name/suffix.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/mk/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/mk/name/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.7%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/it/company/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/it/company/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.7%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr/name/name.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr/name/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.7%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GB/address/default_country.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GB/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GB/address/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.7%    LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%      LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:156:19
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/debug/src/node.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.7%    LazyCompile: ~createDebug /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/connect-mongo/node_modules/debug/src/common.js:60:22
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.7%    LazyCompile: ~create /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/model.js:1761:18
+      1  100.0%      LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/model.js:1751:21
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:67:35
+      1    1.7%    LazyCompile: ~assignSocket node:_http_server:239:62
+      1  100.0%      LazyCompile: ~parserOnIncoming node:_http_server:866:26
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete node:_http_common:72:33
+      1    1.7%    LazyCompile: ~SchemaType /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/schematype.js:42:20
+      1  100.0%      LazyCompile: ~SchemaString /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/schema/string.js:24:22
+      1  100.0%        LazyCompile: ~Schema.interpretAsType /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/schema.js:923:44
+      1  100.0%          LazyCompile: ~Schema.path /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/schema.js:659:33
+      1  100.0%            LazyCompile: ~add /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/schema.js:491:36
+      1    1.7%    LazyCompile: ~O /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/fake.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/fake.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.7%    LazyCompile: ~Hmac node:internal/crypto/hash:127:14
+      1  100.0%      LazyCompile: ~createHmac node:crypto:164:20
+      1  100.0%        LazyCompile: ~HMAC /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/auth/scram.js:214:14
+      1  100.0%          LazyCompile: ~continueScramConversation /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1    1.7%    LazyCompile: ~Bitfield /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%      LazyCompile: ~Bitfield /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%        LazyCompile: ~read /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/saslprep/lib/memory-code-points.js:15:14
+      1  100.0%          Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/saslprep/lib/memory-code-points.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.7%    LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/model.js:1400:85
+      1  100.0%      LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/utils.js:465:18
+      1  100.0%        LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/helpers/promiseOrCallback.js:10:23
+      1  100.0%          LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/utils.js:496:13
+      1  100.0%            LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/operations/execute_operation.js:48:47
+      1    1.7%    LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/utils.js:496:13
+      1  100.0%      LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/mongo_client.js:127:58
+      1  100.0%        LazyCompile: ~connectCallback /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/operations/connect.js:17:29
+      1  100.0%          LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/operations/connect.js:75:31
+      1  100.0%            LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/topology.js:210:76
+      1    1.7%    LazyCompile: *resolve node:path:1091:10
+      1  100.0%      LazyCompile: *realpathSync node:fs:2439:22
+      1  100.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:495:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.7%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/vi/lorem/words.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1    1.7%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/lv/lorem/supplemental.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.7%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/lv/commerce/product_name.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.7%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ge/cell_phone/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.7%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fa/address/building_number.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.7%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/name/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.7%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/address/country.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.7%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/es/address/street_name.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.7%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/containers/MongoContainer.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+
+     57    3.2%  T _voucher_mach_msg_adopt
+     12   21.1%    LazyCompile: *compileFunction node:vm:308:25
+      6   50.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      6  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      6  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      5   83.3%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   16.7%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      6   50.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      6  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      6  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      6  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    T _napi_create_arraybuffer
+      1  100.0%      LazyCompile: ~callSiteToString /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/depd/lib/compat/index.js:21:76
+      1  100.0%        LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/depd/lib/compat/index.js:54:16
+      1  100.0%          Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/depd/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1    1.8%    LazyCompile: ~parse /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1  100.0%      Function: ^messageHandler /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connection.js:416:35
+      1  100.0%        Function: ^emit node:events:475:44
+      1  100.0%          Function: ^processIncomingData /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1  100.0%            Function: ^_write /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:26:11
+      1    1.8%    LazyCompile: ~module.exports.get_napi_build_versions /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@mapbox/node-pre-gyp/lib/util/napi.js:115:50
+      1  100.0%      LazyCompile: ~module.exports.expand_commands /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@mapbox/node-pre-gyp/lib/util/napi.js:94:42
+      1  100.0%        LazyCompile: ~parseOpts /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:144:37
+      1  100.0%          LazyCompile: ~Run /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js:78:13
+      1  100.0%            LazyCompile: ~exports.find /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      1    1.8%    LazyCompile: ~l /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/address/street_name.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/address/street_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    LazyCompile: ~l /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/el/company/index.js:1:520
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/el/company/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.8%    LazyCompile: ~getTimerDuration node:internal/timers:388:26
+      1  100.0%      Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%        LazyCompile: ~makeConnection /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connect.js:247:24
+      1  100.0%          LazyCompile: ~connect /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connect.js:32:17
+      1  100.0%            LazyCompile: ~createConnection /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connection_pool.js:356:26
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/sk/address/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/sk/address/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ro/phone_number/formats.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ro/phone_number/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ro/phone_number/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/phone_number/index.js:1:355
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl_BE/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/hy/address/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/hy/address/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/hr/internet/index.js:1:355
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/hr/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/hr/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr_CA/address/default_country.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr_CA/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr_CA/address/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr_BE/address/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr_BE/address/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/phone_number/index.js:1:355
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/es_MX/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GH/name/last_name.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GH/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GH/name/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_AU/name/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_AU/name/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/address/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/address/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/el/name/title.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/el/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/el/name/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.8%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/de/name/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/de/name/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.8%    LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      1  100.0%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    1.8%    LazyCompile: ~d /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_AU/name/index.js:1:520
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_AU/name/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    LazyCompile: ~connectionListenerInternal node:_http_server:509:36
+      1  100.0%      Function: ^defaultTriggerAsyncIdScope node:internal/async_hooks:454:36
+      1  100.0%        LazyCompile: ~connectionListener node:_http_server:503:28
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            LazyCompile: ~onconnection node:net:1595:22
+      1    1.8%    LazyCompile: ~clearTransport /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/socket.js:266:19
+      1  100.0%      LazyCompile: ~onPacket /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/socket.js:198:26
+      1  100.0%        Function: ^emit node:events:475:44
+      1  100.0%          LazyCompile: ~onPacket /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/transport.js:91:13
+      1  100.0%            LazyCompile: ~onData /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/transport.js:100:11
+      1    1.8%    LazyCompile: ~b /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pl/name/index.js:1:520
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pl/name/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    LazyCompile: ~_ /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/street_address.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/street_address.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    LazyCompile: ~_ /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ar/team/index.js:1:520
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ar/team/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.8%    LazyCompile: ~Response /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/commands.js:346:16
+      1  100.0%      Function: ^processIncomingData /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1  100.0%        Function: ^_write /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:26:11
+      1  100.0%          Function: ^writeOrBuffer node:internal/streams/writable:366:23
+      1  100.0%            Function: ^_write node:internal/streams/writable:284:16
+      1    1.8%    LazyCompile: ~Readable.push node:internal/streams/readable:233:35
+      1  100.0%      LazyCompile: ~writeCommand /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1  100.0%        LazyCompile: ~write /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connection.js:488:15
+      1  100.0%          LazyCompile: ~command /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connection.js:162:12
+      1  100.0%            LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connect.js:80:43
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/socket.io-parser/node_modules/debug/src/node.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/express-session/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/internet/index.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pl/company/index.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pl/address/secondary_address.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/mk/address/city.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/hr/name/title.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/hr/name/last_name.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/he/music/genre.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ge/address/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/animal/cetacean.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/el/company/bs_adjective.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/name/prefix.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1    1.8%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/de/address/street_address.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+
+     40    2.3%  T _mach_msg_server_once
+     26   65.0%    LazyCompile: *Module._findPath node:internal/modules/cjs/loader:495:28
+     14   53.8%      LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:853:35
+     14  100.0%        LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      8   57.1%          LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      8  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+      6   42.9%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      6  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+     12   46.2%      Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+     12  100.0%        LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+     12  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+     12  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+     13   32.5%    LazyCompile: *realpathSync node:fs:2439:22
+      8   61.5%      Function: ^toRealPath node:internal/modules/cjs/loader:394:20
+      8  100.0%        Function: ^tryFile node:internal/modules/cjs/loader:385:17
+      8  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:401:23
+      6   75.0%            Function: ^tryPackage node:internal/modules/cjs/loader:339:20
+      2   25.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:495:28
+      5   38.5%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:495:28
+      3   60.0%        LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      3  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      2   66.7%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1   33.3%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      2   40.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1   50.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   50.0%          Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    2.5%    LazyCompile: *stat node:internal/modules/cjs/loader:151:14
+      1  100.0%      Function: ^tryFile node:internal/modules/cjs/loader:385:17
+      1  100.0%        Function: ^tryExtensions node:internal/modules/cjs/loader:401:23
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:495:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:853:35
+
+     39    2.2%  T _kdebug_trace
+     18   46.2%    LazyCompile: *compileFunction node:vm:308:25
+     11   61.1%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     11  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+     11  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     11  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      7   38.9%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      7  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      7  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      4   57.1%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      3   42.9%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      2    5.1%    LazyCompile: ~ReadableState node:internal/streams/readable:83:23
+      2  100.0%      LazyCompile: ~Readable node:internal/streams/readable:186:18
+      2  100.0%        LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1   50.0%          LazyCompile: ~Socket node:net:291:16
+      1  100.0%            LazyCompile: ~WriteStream node:tty:84:21
+      1   50.0%          LazyCompile: ~MessageStream /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:21:16
+      1  100.0%            LazyCompile: ~Connection /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connection.js:38:16
+      1    2.6%    LazyCompile: ~w /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/commerce/color.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/commerce/color.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    2.6%    LazyCompile: ~u /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/name/male_middle_name.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/name/male_middle_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    2.6%    LazyCompile: ~p /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/index.js:1:246
+      1  100.0%      LazyCompile: ~m /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/index.js:1:419
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/de_AT/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.6%    LazyCompile: ~m /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr_BE/address/state.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr_BE/address/state.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    2.6%    LazyCompile: ~isEmpty node:internal/fixed_queue:95:10
+      1  100.0%      LazyCompile: ~nextTick node:internal/process/task_queues:103:18
+      1  100.0%        LazyCompile: ~construct node:internal/streams/destroy:219:19
+      1  100.0%          LazyCompile: ~Writable node:internal/streams/writable:219:18
+      1  100.0%            LazyCompile: ~WriteStream node:internal/fs/streams:302:21
+      1    2.6%    LazyCompile: ~handleOperationResult /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/server.js:315:42
+      1  100.0%      LazyCompile: ~messageHandler /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connection.js:416:35
+      1  100.0%        Function: ^emit node:events:475:44
+      1  100.0%          LazyCompile: ~processIncomingData /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1  100.0%            Function: ^_write /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:26:11
+      1    2.6%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/name/prefix.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/name/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.6%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_ZA/address/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_ZA/address/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    2.6%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_AU_ocker/address/street_suffix.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_AU_ocker/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_AU_ocker/address/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.6%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/cz/name/last_name.js:1:355
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/cz/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/cz/name/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.6%    LazyCompile: ~execute /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/operations/create_collection.js:37:12
+      1  100.0%      LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/operations/execute_operation.js:147:61
+      1  100.0%        LazyCompile: ~processWaitQueue /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/topology.js:606:26
+      1  100.0%          LazyCompile: ~selectServer /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/topology.js:268:17
+      1  100.0%            LazyCompile: ~executeWithServerSelection /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/operations/execute_operation.js:65:36
+      1    2.6%    LazyCompile: ~createHttpErrorConstructor /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/http-errors/index.js:118:37
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/http-errors/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    2.6%    LazyCompile: ~createAppender /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/log4js/lib/appenders/index.js:62:24
+      1  100.0%      LazyCompile: ~getAppender /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/log4js/lib/appenders/index.js:48:21
+      1  100.0%        LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/log4js/lib/appenders/index.js:112:41
+      1  100.0%          t _Builtins_ArrayForEach
+      1  100.0%            LazyCompile: ~setup /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/log4js/lib/appenders/index.js:101:15
+      1    2.6%    LazyCompile: ~Server.listen node:net:1461:35
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/app.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1    2.6%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/whatwg-url/lib/encoding.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1    2.6%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/phone_number/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    2.6%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr_CH/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    2.6%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/el/business/credit_card_types.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1    2.6%    Function: ^compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%      LazyCompile: *compileFunction node:vm:308:25
+      1  100.0%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+
+     33    1.9%  /usr/lib/system/libsystem_malloc.dylib
+      3    9.1%    t _Builtins_FindOrderedHashMapEntry
+      2   66.7%      t _Builtins_MapPrototypeGet
+      1   50.0%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:291:21
+      1  100.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:473:24
+      1  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:495:28
+      1   50.0%        Function: ^readPackage node:internal/modules/cjs/loader:291:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:322:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1   33.3%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:322:26
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      3    9.1%    LazyCompile: *compileFunction node:vm:308:25
+      2   66.7%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      2  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1   50.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1   50.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   33.3%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    t _Builtins_KeyedLoadIC_Megamorphic
+      1  100.0%      LazyCompile: *realpathSync node:fs:2439:22
+      1  100.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:495:28
+      1  100.0%          LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    LazyCompile: ~y /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_NG/name/index.js:1:520
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_NG/name/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    LazyCompile: ~undestroy node:internal/streams/destroy:154:19
+      1  100.0%      LazyCompile: ~initSocketHandle node:net:260:26
+      1  100.0%        LazyCompile: ~Socket node:net:291:16
+      1  100.0%          LazyCompile: ~TLSSocket node:_tls_wrap:463:19
+      1  100.0%            LazyCompile: ~connect node:_tls_wrap:1598:35
+      1    3.0%    LazyCompile: ~processIncomingData /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1  100.0%      LazyCompile: ~_write /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:26:11
+      1  100.0%        Function: ^writeOrBuffer node:internal/streams/writable:366:23
+      1  100.0%          Function: ^_write node:internal/streams/writable:284:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:334:36
+      1    3.0%    LazyCompile: ~onlookup node:dns:81:18
+      1    3.0%    LazyCompile: ~n /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/az/index.js:1:246
+      1  100.0%      LazyCompile: ~e /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/az/index.js:1:419
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/az/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.0%    LazyCompile: ~matchKnownFields node:_http_incoming:234:26
+      1  100.0%      Function: ^_addHeaderLine node:_http_incoming:340:24
+      1  100.0%        Function: ^get node:_http_incoming:108:16
+      1  100.0%          LazyCompile: ~parserOnIncoming node:_http_server:866:26
+      1  100.0%            LazyCompile: ~parserOnHeadersComplete node:_http_common:72:33
+      1    3.0%    LazyCompile: ~m /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_IE/internet/domain_suffix.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_IE/internet/domain_suffix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    LazyCompile: ~listOnTimeout node:internal/timers:512:25
+      1  100.0%      Function: ^processTimers node:internal/timers:492:25
+      1    3.0%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ro/name/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ro/name/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr/company/bs_verb.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr/company/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr/company/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.0%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GH/address/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_GH/address/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    LazyCompile: ~f /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/cz/address/index.js:1:246
+      1  100.0%      LazyCompile: ~t /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/cz/address/index.js:1:419
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/cz/address/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.0%    LazyCompile: ~_copy node:buffer:203:15
+      1  100.0%      Function: ^copy node:buffer:776:16
+      1  100.0%        LazyCompile: ~serialize /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/bson/lib/bson.js:111:19
+      1  100.0%          LazyCompile: ~serializeBson /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/commands.js:530:18
+      1  100.0%            LazyCompile: ~makeDocumentSegment /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/commands.js:522:24
+      1    3.0%    LazyCompile: ~D /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/hacker/index.js:1:520
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/hacker/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    LazyCompile: ~CommandOperation /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/operations/command.js:14:16
+      1  100.0%      LazyCompile: ~CreateCollectionOperation /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/operations/create_collection.js:31:16
+      1  100.0%        LazyCompile: ~createCollection /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/db.js:153:21
+      1  100.0%          LazyCompile: ~createCollection /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/connection.js:399:82
+      1  100.0%            LazyCompile: ~Connection.onOpen /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/connection.js:631:39
+      1    3.0%    LazyCompile: ~C /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/he/address/street_suffix.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/he/address/street_suffix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/whatwg-url/lib/percent-encoding.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/errors.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pt_BR/address/city_suffix.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    3.0%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/hacker/phrase.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    3.0%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/el/company/noun.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1    3.0%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/definitions/definitions.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+
+     31    1.7%  T __kernelrpc_mach_vm_protect_trap
+     29   93.5%    LazyCompile: *readSync node:fs:689:18
+     29  100.0%      LazyCompile: *readFileSync node:fs:455:22
+     29  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     29  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+     26   89.7%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      3   10.3%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+
+     30    1.7%  /usr/lib/libc++.1.dylib
+     12   40.0%    LazyCompile: *compileFunction node:vm:308:25
+      7   58.3%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      7  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      7  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      4   57.1%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      3   42.9%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      5   41.7%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      5  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      5  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      5  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.3%    LazyCompile: ~update /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/topology_description.js:142:11
+      1  100.0%      Function: ^serverUpdateHandler /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1  100.0%        Function: ^<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/topology.js:530:53
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            Function: ^<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/server.js:58:62
+      1    3.3%    LazyCompile: ~l /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr/company/index.js:1:520
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fr/company/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.3%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/sv/address/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/sv/address/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.3%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/commerce/index.js:1:355
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.3%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ge/phone_number/formats.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ge/phone_number/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ge/phone_number/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.3%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/es/company/suffix.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/es/company/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/es/company/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.3%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/word/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/word/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.3%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/de/index.js:1:355
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/index.js:1:363
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.3%    LazyCompile: ~exports.install /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/whatwg-url/lib/URL.js:83:19
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/whatwg-url/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    3.3%    LazyCompile: ~d /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/cz/company/bs_verb.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/cz/company/bs_verb.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    3.3%    LazyCompile: ~V /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/faker.js:1:1093
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    3.3%    LazyCompile: ~Readable.setEncoding node:internal/streams/readable:345:42
+      1  100.0%      LazyCompile: ~onDataRequest /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/transports/polling.js:92:18
+      1  100.0%        LazyCompile: ~onRequest /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/transports/polling.js:40:14
+      1  100.0%          LazyCompile: ~callback /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/server.js:347:26
+      1  100.0%            LazyCompile: ~verify /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/server.js:76:11
+      1    3.3%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/lv/commerce/index.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    3.3%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_AU/company/suffix.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    3.3%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/team/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    3.3%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/animal/crocodilia.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+
+     28    1.6%  t __pthread_bsdthread_init
+      9   32.1%    LazyCompile: *compileFunction node:vm:308:25
+      5   55.6%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      5  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      5  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      5  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      4   44.4%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      4  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      4  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      3   75.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   25.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1    3.6%    t _Builtins_StringPrototypeMatch
+      1  100.0%      LazyCompile: ~MongoCredentials /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/auth/mongo_credentials.js:30:16
+      1  100.0%        LazyCompile: ~merge /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/auth/mongo_credentials.js:111:17
+      1  100.0%          LazyCompile: ~transform /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/connection_string.js:497:18
+      1  100.0%            LazyCompile: ~setOption /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/connection_string.js:396:19
+      1    3.6%    LazyCompile: ~serverUpdateHandler /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/topology.js:366:24
+      1  100.0%      LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/topology.js:530:53
+      1  100.0%        Function: ^emit node:events:475:44
+      1  100.0%          LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/server.js:58:62
+      1  100.0%            Function: ^emit node:events:475:44
+      1    3.6%    LazyCompile: ~route /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/express/lib/router/index.js:497:29
+      1  100.0%      LazyCompile: ~proto.<computed> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/express/lib/router/index.js:514:27
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/routes/conversations.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.6%    LazyCompile: ~realpathSync node:fs:2439:22
+      1  100.0%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:394:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:495:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      1    3.6%    LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:35:36
+      1  100.0%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.6%    LazyCompile: ~n /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/index.js:1:246
+      1  100.0%      LazyCompile: ~t /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/index.js:1:419
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.6%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/name/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nb_NO/name/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.6%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/mk/address/secondary_address.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/mk/address/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/mk/address/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.6%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/he/name/last_name.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/he/name/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/he/name/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.6%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/finance/transaction_type.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/finance/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/finance/index.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.6%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/animal/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/animal/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.6%    LazyCompile: ~formatRaw node:internal/util/inspect:820:19
+      1  100.0%      LazyCompile: ~formatValue node:internal/util/inspect:745:21
+      1  100.0%        LazyCompile: ~formatProperty node:internal/util/inspect:1810:24
+      1  100.0%          LazyCompile: ~formatRaw node:internal/util/inspect:820:19
+      1  100.0%            LazyCompile: ~formatValue node:internal/util/inspect:745:21
+      1    3.6%    LazyCompile: ~d /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/address/street_prefix.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/address/street_prefix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.6%    LazyCompile: ~a /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/sv/address/city.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/sv/address/city.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    3.6%    LazyCompile: ~Gauge /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/gauge/index.js:19:16
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/npmlog/log.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    3.6%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/zh_TW/name/first_name.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1    3.6%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/sv/address/street_name.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1    3.6%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/id_ID/internet/index.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    3.6%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/hy/address/default_country.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+
+     23    1.3%  UNKNOWN
+      8   34.8%    LazyCompile: *compileFunction node:vm:308:25
+      6   75.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      6  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      6  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      6  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      2   25.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      2  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    4.3%    t _Builtins_KeyedLoadIC_Megamorphic
+      1  100.0%      Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/glob/sync.js:1:1
+      1    4.3%    t _Builtins_FindOrderedHashMapEntry
+      1  100.0%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:322:26
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1    4.3%    t _Builtins_DeoptimizationEntry_Soft
+      1  100.0%      LazyCompile: ~defaultConfiguration /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/express/lib/application.js:70:57
+      1  100.0%        LazyCompile: ~init /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/express/lib/application.js:57:25
+      1  100.0%          LazyCompile: ~createApplication /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/express/lib/express.js:37:27
+      1  100.0%            Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/app.js:1:1
+      1    4.3%    LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:35:36
+      1  100.0%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.3%    LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:107:28
+      1  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:35:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.3%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/address/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/nl/address/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    4.3%    LazyCompile: ~b /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ar/name/first_name.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ar/name/first_name.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    4.3%    LazyCompile: ~TLSSocket node:_tls_wrap:463:19
+      1  100.0%      LazyCompile: ~connect node:_tls_wrap:1598:35
+      1  100.0%        LazyCompile: ~makeConnection /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connect.js:247:24
+      1  100.0%          LazyCompile: ~connect /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connect.js:32:17
+      1  100.0%            LazyCompile: ~checkServer /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/monitor.js:139:21
+      1    4.3%    LazyCompile: ~ClientSession /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sessions.js:54:16
+      1  100.0%      LazyCompile: ~startSession /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/topology.js:336:17
+      1  100.0%        LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/operations/execute_operation.js:16:48
+      1  100.0%          LazyCompile: ~maybePromise /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/utils.js:484:22
+      1  100.0%            LazyCompile: ~executeOperation /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/operations/execute_operation.js:11:26
+      1    4.3%    LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/transports/websocket.js:17:35
+      1  100.0%      Function: ^emit node:events:475:44
+      1  100.0%        LazyCompile: ~receiverOnMessage /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/ws/lib/websocket.js:1021:27
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            LazyCompile: ~dataMessage /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/ws/lib/receiver.js:486:14
+      1    4.3%    Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1  100.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:348:29
+      1  100.0%          Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:315:27
+      1    4.3%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/uk/address/index.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1    4.3%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en/finance/credit_card/visa.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    4.3%    Function: ^Module._resolveLookupPaths node:internal/modules/cjs/loader:668:38
+      1  100.0%      LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:853:35
+      1  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+
+     22    1.2%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+     12   54.5%    LazyCompile: *compileFunction node:vm:308:25
+      6   50.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      6  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      6  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      4   66.7%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      2   33.3%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      6   50.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      6  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      6  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      6  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    4.5%    t _Builtins_ArrayMap
+      1  100.0%      LazyCompile: ~ServerDescription /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/server_description.js:34:16
+      1  100.0%        LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/server.js:58:62
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/monitor.js:201:52
+      1    4.5%    LazyCompile: ~toRealPath node:internal/modules/cjs/loader:394:20
+      1  100.0%      LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:495:28
+      1  100.0%        LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%          LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.5%    LazyCompile: ~realpathSync node:fs:2439:22
+      1  100.0%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:394:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:495:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:15:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:70:31
+      1    4.5%    LazyCompile: ~prepare /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/auth/scram.js:16:12
+      1  100.0%      LazyCompile: ~prepareHandshakeDocument /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connect.js:145:34
+      1  100.0%        LazyCompile: ~performInitialHandshake /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connect.js:64:33
+      1  100.0%          LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connect.js:33:63
+      1  100.0%            LazyCompile: ~callback /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connect.js:260:31
+      1    4.5%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ur/vehicle/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ur/vehicle/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    4.5%    LazyCompile: ~createAppender /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/log4js/lib/appenders/index.js:62:24
+      1  100.0%      LazyCompile: ~getAppender /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/log4js/lib/appenders/index.js:48:21
+      1  100.0%        LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/log4js/lib/appenders/index.js:112:41
+      1  100.0%          t _Builtins_ArrayForEach
+      1  100.0%            LazyCompile: ~setup /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/log4js/lib/appenders/index.js:101:15
+      1    4.5%    LazyCompile: ~byteLength node:buffer:643:17
+      1  100.0%      Function: ^fromStringFast node:buffer:415:24
+      1  100.0%        Function: ^fromString node:buffer:434:20
+      1  100.0%          Function: ^from node:buffer:298:28
+      1  100.0%            LazyCompile: ~continueScramConversation /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1    4.5%    LazyCompile: ~applyHooks /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/helpers/model/applyHooks.js:32:20
+      1  100.0%      LazyCompile: ~compile /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/model.js:4810:33
+      1  100.0%        LazyCompile: ~Mongoose._model /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/index.js:533:37
+      1  100.0%          LazyCompile: ~Mongoose.model /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongoose/lib/index.js:469:36
+      1  100.0%            Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/models/User.js:1:1
+      1    4.5%    LazyCompile: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connection_pool.js:267:27
+      1  100.0%      LazyCompile: ~handleOperationResult /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/sdam/server.js:315:42
+      1  100.0%        LazyCompile: ~messageHandler /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/connection.js:416:35
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            LazyCompile: ~processIncomingData /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    4.5%    Function: ~<anonymous> node:internal/main/run_main_module:1:1
+
+     20    1.1%  T ___pthread_init
+      8   40.0%    LazyCompile: *compileFunction node:vm:308:25
+      5   62.5%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      5  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      5  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      5  100.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      3   37.5%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+      3  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      3  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    5.0%    t _Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit
+      1  100.0%      Function: ^resolveBSONOptions /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/bson.js:53:28
+      1  100.0%        LazyCompile: ~resolveOptions /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/utils.js:826:24
+      1  100.0%          LazyCompile: ~createIndex /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/mongodb/lib/collection.js:253:16
+      1  100.0%            LazyCompile: ~setAutoRemove /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:138:18
+      1    5.0%    T _napi_create_arraybuffer
+      1  100.0%      LazyCompile: ~callSiteToString /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/depd/lib/compat/index.js:21:76
+      1  100.0%        LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/depd/lib/compat/index.js:54:16
+      1  100.0%          Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/depd/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1    5.0%    LazyCompile: ~value node:internal/console/constructor:223:20
+      1  100.0%      LazyCompile: ~initializeGlobalConsole node:internal/console/constructor:671:33
+      1  100.0%        LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:107:28
+      1  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:35:36
+      1  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    5.0%    LazyCompile: ~u /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_IND/company/suffix.js:1:375
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/en_IND/company/suffix.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    5.0%    LazyCompile: ~get FileReadStream node:fs:3035:21
+      1  100.0%      t _Builtins_ReflectGet
+      1  100.0%        Function: ^getOwn node:internal/bootstrap/loaders:186:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:303:14
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:262:25
+      1    5.0%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/zh_CN/name/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/zh_CN/name/index.js:1:1
+      1  100.0%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    5.0%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ko/company/suffix.js:1:311
+      1  100.0%      LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ko/company/index.js:1:355
+      1  100.0%        Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ko/company/index.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    5.0%    LazyCompile: ~get /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ja/address/index.js:1:355
+      1  100.0%      Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/ja/address/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1    5.0%    LazyCompile: ~Duplex node:internal/streams/duplex:54:16
+      1  100.0%      LazyCompile: ~Socket node:net:291:16
+      1  100.0%        LazyCompile: ~WriteStream node:tty:84:21
+      1  100.0%          LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%            LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:156:19
+      1    5.0%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/pt_PT/address/country.js:1:1
+      1  100.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    5.0%    Function: ~<anonymous> /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/@faker-js/faker/dist/cjs/locales/fa/finance/currency.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: *Module._load node:internal/modules/cjs/loader:759:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    5.0%    Function: ^emit node:events:475:44
+      1  100.0%      LazyCompile: ~onPollRequest /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/transports/polling.js:58:18
+      1  100.0%        LazyCompile: ~onRequest /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/transports/polling.js:40:14
+      1  100.0%          LazyCompile: ~handshake /Users/yaokevinn/Desktop/Coderhouse/Curso Backend/Desafíos/Clase32_Logs_Debug_Profiling/Proyecto-backend/node_modules/engine.io/build/server.js:173:20
+      1  100.0%            t _Builtins_AsyncFunctionAwaitResolveClosure
+
