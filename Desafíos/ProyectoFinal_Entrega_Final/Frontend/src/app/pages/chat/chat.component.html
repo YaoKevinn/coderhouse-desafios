@@ -1,0 +1,13 @@
+<div class="container">
+  <div *ngFor="let m of messages" class="message" [class.self]="authService.loggedUser?.username === m.email">
+    <p>{{ m.email }}</p>
+    <p>{{ m.body }}</p>
+    <p>{{ m.creationTime | date }}</p>
+    <span *ngIf="m.type === 'sistema'" class="admin">ADMIN</span>
+  </div>
+
+  <div class="input-section">
+    <input class="custom-input" type="text" [formControl]="messageControl" placeholder="Escribí tus consultas..." />
+    <img src="/assets/send.svg" alt="send" (click)="sendMessage()">
+  </div>
+</div>

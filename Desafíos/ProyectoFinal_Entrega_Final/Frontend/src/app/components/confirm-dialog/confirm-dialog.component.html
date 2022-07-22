@@ -1,0 +1,11 @@
+<div class="container">
+  <h2 class="text-body">¿Desea eliminar {{ data.product.nombre }}?</h2>
+  <div class="row">
+    <div class="cancel-btn" (click)="dialogRef.close(false)">
+      <p>Cancelar</p>
+    </div>
+    <div class="confirm-btn" (click)="dialogRef.close(true)">
+      <p>Confirmar</p>
+    </div>
+  </div>
+</div>

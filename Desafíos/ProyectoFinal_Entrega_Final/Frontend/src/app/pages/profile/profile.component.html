@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="login-card">
+    <p class="modal-title">Perfil de usuario</p>
+    <div class="row">
+      <p>Username: </p>
+      <p>{{ authService.loggedUser.username }}</p>
+    </div>
+    <div class="row">
+      <p>Nombre: </p>
+      <p>{{ authService.loggedUser.name }}</p>
+    </div>
+    <div class="row">
+      <p>Dirección: </p>
+      <p>{{ authService.loggedUser.address }}</p>
+    </div>
+    <div class="row">
+      <p>Edad: </p>
+      <p>{{ authService.loggedUser.year }}</p>
+    </div>
+    <div class="row">
+      <p>Teléfono: </p>
+      <p>{{ authService.loggedUser.phone }}</p>
+    </div>
+    <div class="image" [ngStyle]="{'background-image':'url('+authService.loggedUser.image+')'}"></div>
+    </div>
+</div>
+

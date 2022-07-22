@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="logo-section">
+    <i><p class="logo-white">Ecommerce</p></i>
+    <i><p class="logo-yellow">Coder</p></i>
+  </div>
+  <div class="sidebar-option" [routerLink]="['/products']" routerLinkActive="active">
+    <img src="/assets/product.svg" alt="product">
+    <p>Productos</p>
+  </div>
+  <div class="sidebar-option" [routerLink]="['/cart']" routerLinkActive="active">
+    <img src="/assets/cart.svg" alt="cart">
+    <p>Carrito</p>
+  </div>
+  <div class="sidebar-option" [routerLink]="['/profile']" routerLinkActive="active">
+    <img src="/assets/profile.svg" alt="profile">
+    <p>Perfil</p>
+  </div>
+  <div class="sidebar-option" [routerLink]="['/chat']" routerLinkActive="active">
+    <img src="/assets/chat.svg" alt="chat">
+    <p>Chat</p>
+  </div>
+  <div class="sidebar-option" (click)="logout()">
+    <img src="/assets/logout.svg" alt="profile">
+    <p>Cerrar sesión</p>
+  </div>
+</div>

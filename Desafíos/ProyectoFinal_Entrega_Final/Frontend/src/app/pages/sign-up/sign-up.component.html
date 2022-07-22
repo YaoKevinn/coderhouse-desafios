@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="login-card">
+    <p class="modal-title">Sumate</p>
+
+    <input class="custom-input" type="text" [formControl]="mailControl" placeholder="Usuario (Ejemplo: test@gmail.com)" />
+    <input class="custom-input" type="text" [formControl]="passwordControl" placeholder="Contraseña" />
+    <input class="custom-input" type="text" [formControl]="nameControl" placeholder="Nombre" />
+    <input class="custom-input" type="text" [formControl]="addressControl" placeholder="Dirección" />
+    <input class="custom-input" type="text" [formControl]="yearControl" placeholder="Edad" />
+    <input class="custom-input" type="text" [formControl]="phoneControl" placeholder="Teléfono (Ejemplo: +541123456789)" />
+
+    <span>Foto de perfil: </span>
+    <input
+      class="custom-input"
+      type="file"
+      name="file"
+      id="profile"
+      (change)="handleUpload($event)"
+    />
+
+    <div class="confirm-btn" (click)="signUp()">
+      <p>Registrar</p>
+    </div>
+    <p style="text-align: center" (click)="goToLogin()">Iniciar sesión</p>
+  </div>
+</div>

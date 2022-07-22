@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  height: 100vh;
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}
+
+::ng-deep .mat-dialog-container {
+  background-color: #27292C !important;
+}
+

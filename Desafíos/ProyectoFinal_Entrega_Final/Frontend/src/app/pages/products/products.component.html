@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <h2 class="title">Productos</h2>
+    <img
+      class="add-btn"
+      src="/assets/add.svg"
+      alt="add"
+      (click)="openAddProductDialog()"
+    />
+  </div>
+  <div class="products-section">
+    <div class="product-card" *ngFor="let product of allProducts">
+      <img [src]="product.foto" alt="foto" />
+      <p class="product-name">{{ product.nombre }}</p>
+      <div class="row">
+        <p class="product-stock">Disponible: {{ product.stock }}</p>
+        <p class="product-price">U$D {{ product.precio }}</p>
+      </div>
+      <div class="action-row">
+        <div class="action-remove" (click)="removeProduct(product)">
+          <img class="action-btn" src="/assets/remove.svg" alt="edit" />
+        </div>
+        <div class="action-edit" (click)="modifyProduct(product)">
+          <img class="action-btn" src="/assets/edit.svg" alt="edit" />
+        </div>
+      </div>
+  </div>
+</div>
